@@ -34,5 +34,5 @@ async function search() {
     out.innerHTML = items.length
       ? items.map(p => `<figure><img src="${p.url}" width="200"><figcaption>${p.labels.join(', ')}</figcaption></figure>`).join('')
       : 'No results';
-  } catch (e) { out.innerHTML = 'Error: ' + e.message; }
+  } catch (e) { out.innerHTML = 'Error: ' + e.message; } //comment added
 }
