@@ -28,7 +28,7 @@ async function search() {
   const q = document.getElementById('searchBox').value.trim();
   const out = document.getElementById('results');
   out.innerHTML = 'Searching...';
-  try {
+  try {// comment
     const res = await apigClient.searchGet({ q }, {}, {});
     const items = res.data.results || [];
     out.innerHTML = items.length
